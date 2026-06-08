@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIPAS | Noble Institute of Professional & Applied Sciences Islamabad</title>
+<!-- Font Awesome 6 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.webp" alt="NIPAS Logo">
+      </a>
+    </div>
+    <!-- DESKTOP MENU -->
+    <nav class="nav-menu" aria-label="Main Navigation">
+      <a href="#" class="nav-link">About</a>
+      <!-- PROGRAMS DROPDOWN -->
+      <div class="dropdown">
+        <button class="nav-link dropdown-btn" aria-haspopup="true" aria-expanded="false">Programs ▾</button>
+        <div class="dropdown-menu" role="menu">
+          <a href="#" class="dropdown-item">School of Health Sciences</a>
+          <a href="#" class="dropdown-item">School of Nursing</a>
+          <a href="#" class="dropdown-item">School of Management Sciences</a>
+          <a href="#" class="dropdown-item">School of Artificial Intelligence & Computing</a>
+          <a href="#" class="dropdown-item">School of Social Sciences</a>
+          <a href="#" class="dropdown-item">School of Entrepreneurship & Innovation</a>
+        </div>
+      </div>
+      <a href="#" class="nav-link">Apply Online</a>
+      <a href="#" class="nav-link">Research</a>
+      <a href="#" class="nav-link">News</a>
+      <a href="#" class="nav-link">Contact Us</a>
+      <a href="#" class="nav-link apply-btn">Apply Now</a>
+    </nav>
+    <!-- MOBILE TOGGLE -->
+    <button class="hamburger" id="hamburger" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+<!-- MOBILE MENU -->
+<aside class="mobile-menu" id="mobileMenu">
+  <div class="mobile-header">
+    <a href="index.html" class="mobile-logo">
+      <img src="images/logo.webp" alt="NIPAS Logo">
+    </a>
+    <button class="close-btn" id="closeMenu" aria-label="Close Menu">×</button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="#">About</a>
+    <button class="mobile-dropdown-btn">Programs ▾</button>
+    <div class="mobile-dropdown">
+      <a href="#">School of Health Sciences</a>
+      <a href="#">School of Nursing</a>
+      <a href="#">School of Management Sciences</a>
+      <a href="#">School of AI & Computing</a>
+      <a href="#">School of Social Sciences</a>
+      <a href="#">School of Entrepreneurship</a>
+    </div>
+    <a href="#">Guide</a>
+    <a href="#">Research</a>
+    <a href="#">News</a>
+    <a href="#">Apply Now</a>
+    <a href="#">Contact Us</a>
+  </nav>
+</aside>
+<script>
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+const overlay = document.getElementById("overlay");
+const closeMenu = document.getElementById("closeMenu");
+function openMenu() {
+  mobileMenu.classList.add("active");
+  overlay.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+function closeMobileMenu() {
+  mobileMenu.classList.remove("active");
+  overlay.classList.remove("active");
+  document.body.style.overflow = "auto";
+}
+hamburger.addEventListener("click", openMenu);
+closeMenu.addEventListener("click", closeMobileMenu);
+overlay.addEventListener("click", closeMobileMenu);
+document.querySelectorAll(".mobile-nav a").forEach(link => {
+  link.addEventListener("click", closeMobileMenu);
+});
+const mobileDropdownBtn = document.querySelector(".mobile-dropdown-btn");
+const mobileDropdown = document.querySelector(".mobile-dropdown");
+mobileDropdownBtn.addEventListener("click", () => {
+  if (mobileDropdown.style.display === "flex") {
+    mobileDropdown.style.display = "none";
+  } else {
+    mobileDropdown.style.display = "flex";
+  }
+});
+window.addEventListener("scroll", () => {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > 10) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+</script>
+
+<!-- Hero section -->
+
+<!-- ================= MAIN CONTENT ================= -->
+<main>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-flex">
+        <div class="hero-left">
+          <div class="hero-badge"><i class="fas fa-award"></i> Chartered Institute of Research, Innovation & AI</div>
+          <h1>Noble Institute of <span>Professional & Applied Sciences</span></h1>
+          <p style="font-size: 1.2rem; margin: 20px 0; font-weight: 500;">“Shaping Future Leaders, Innovators and Nation Builders”</p>
+          <p>Built upon pillars of <strong>Research, Innovation, Entrepreneurship, AI, Healthcare Excellence</strong> and Global Collaboration — redefining higher education for the 4th & 5th Industrial Revolution. NIPAS is a chartered institute dedicated to preparing learners for the challenges of AI, emerging technologies, healthcare transformation, and global economic development.</p>
+          <div class="stats-flex">
+            <div class="stat-item"><h3>18+</h3><p>Academic Schools</p></div>
+            <div class="stat-item"><h3>60+</h3><p>Global Partners</p></div>
+            <div class="stat-item"><h3>100%</h3><p>Industry Focus</p></div>
+          </div>
+          <div class="hero-button-container">
+            <a href="#" class="btn-primary"><i class="fas fa-graduation-cap"></i> Explore Programs</a>
+            <a href="#" class="btn-outline-light" style="border-color:#023f8d; color:#023f8d;"><i class="fas fa-video"></i> Virtual Tour</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="images/hero-img.webp" alt="NIPAS Students">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section style="background: #fafcff;">
+    <div class="container">
+      <div class="research-flex">
+        <div class="research-img"><img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Campus"></div>
+        <div class="research-text">
+          <h2 class="section-title" style="text-align: left;">A New <span>Paradigm</span> of Higher Education</h2>
+          <p style="margin-bottom: 1rem;">The Noble Institute of Professional and Applied Sciences (NIPAS) is a future-focused institution established to bridge the gap between academia, industry, healthcare, technology, and innovation. We combine academic excellence with practical learning, professional development, cutting-edge research, and international exposure to prepare graduates for leadership in the Fourth and Fifth Industrial Revolutions.</p>
+          <p>Our educational philosophy emphasizes research-based learning, industry-oriented education, innovation & entrepreneurship, healthcare excellence, artificial intelligence, global competitiveness, sustainable development, and leadership formation. NIPAS is committed to developing a new generation of professionals, scientists, healthcare experts, entrepreneurs, and transformational leaders.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 25px;">
+            <span><i class="fas fa-flask" style="color:#800020;"></i> Research-Based</span>
+            <span><i class="fas fa-microchip" style="color:#800020;"></i> AI & Emerging Tech</span>
+            <span><i class="fas fa-handshake" style="color:#800020;"></i> Industry Integration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES SECTION -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">The <span>NIPAS</span> Advantage</h2>
+      <div class="advantages-flex">
+        <div class="advantage-card card-maroon"><i class="fas fa-microscope"></i><h3>Research Culture</h3><p>Strong research ecosystem encouraging inquiry, innovation, publications, patents, and problem-solving.</p></div>
+        <div class="advantage-card card-blue"><i class="fas fa-chalkboard"></i><h3>Industry-Oriented</h3><p>Curriculum developed with industry experts to ensure employability and practical relevance.</p></div>
+        <div class="advantage-card card-maroon"><i class="fas fa-lightbulb"></i><h3>Innovation & Entrepreneurship</h3><p>Empowering students to become startup founders, innovators, and job creators.</p></div>
+        <div class="advantage-card card-blue"><i class="fas fa-robot"></i><h3>AI & Future Tech</h3><p>Preparing graduates for AGI, Data Science, Cybersecurity, Robotics, and Digital Transformation.</p></div>
+        <div class="advantage-card card-maroon"><i class="fas fa-hospital-user"></i><h3>Healthcare Excellence</h3><p>World-class education in Allied Health Sciences, Medical Technologies, Nursing, and Public Health.</p></div>
+        <div class="advantage-card card-blue"><i class="fas fa-globe"></i><h3>Global Collaborations</h3><p>International partnerships, dual degrees, student exchange, and global research projects.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH SECTION -->
+  <section style="background: #ffffff;">
+    <div class="container">
+      <div class="research-flex">
+        <div class="research-img"><img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Research Lab"></div>
+        <div class="research-text">
+          <h2 class="section-title" style="text-align: left;">Research <span>Excellence</span> at NIPAS</h2>
+          <p style="margin-bottom: 20px;">At NIPAS, research is the engine of innovation. Our interdisciplinary research centers focus on healthcare sciences, artificial intelligence, sustainable development, and emerging technologies. Faculty and students collaborate on industry-sponsored projects, publish in high-impact journals, and file patents that address real-world challenges. We have established dedicated research labs for biomedical engineering, AI ethics, public health analytics, and robotics.</p>
+          <p style="margin-bottom: 20px;">Through our student research fellowship program, undergraduates and postgraduates receive mentorship and funding to pursue groundbreaking ideas. NIPAS also hosts an annual international research conference, attracting scholars from over 20 countries. Our research output has grown by 200% in the last three years, with multiple patents filed in healthcare diagnostics and AI-driven solutions.</p>
+          <a href="#" class="btn-primary"> Discover Research Initiatives <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMIC SCHOOLS (Paragraph style, center aligned, Times New Roman headings, Learn More button) -->
+  <section style="background: #fefefe;">
+    <div class="container">
+      <h2 class="section-title">Academic <span>Schools</span></h2>
+      <div style="text-align: center; margin-bottom: 20px;">
+        <!-- <span class="section-subhead" style="border-bottom: 2px solid #800020;">World-class disciplines for future leaders</span> -->
+      </div>
+      <div class="schools-paragraph-grid">
+        <div class="school-paragraph-card"><i class="fas fa-heartbeat"></i><h3>Health Sciences</h3><p>BS, MS, MPhil, PhD in Public Health, Healthcare Management, Clinical Research, and Global Health.</p> </div>
+        <div class="school-paragraph-card"><i class="fas fa-stethoscope"></i><h3>Allied Health Sciences</h3><p>Medical Lab Technology, Radiology, Operation Theatre, Cardiac Technology, Physiotherapy, Emergency Care.</p></div>
+        <div class="school-paragraph-card"><i class="fas fa-microscope"></i><h3>Medical Sciences & Tech</h3><p>Biomedical Technology, Digital Healthcare, Clinical Diagnostics, and Medical Equipment Innovation.</p></div>
+        <div class="school-paragraph-card"><i class="fas fa-user-nurse"></i><h3>Nursing Sciences</h3><p>BSN, MSN, MPhil, PhD Nursing – leadership in patient care, nursing informatics, and community health.</p></div>
+        <div class="school-paragraph-card"><i class="fas fa-brain"></i><h3>AI & Computing</h3><p>BS/MS/MPhil/PhD in AI, CS, Data Science, Cybersecurity, Blockchain, AGI, and Robotics.</p></div>
+        <div class="school-paragraph-card"><i class="fas fa-chart-line"></i><h3>Management Sciences</h3><p>Business Administration, Finance, Marketing, HR, Supply Chain Management, Strategic Leadership.</p></div>
+        <div class="school-paragraph-card"><i class="fas fa-rocket"></i><h3>Entrepreneurship & Innovation</h3><p>Startup Development, Business Incubation, Technology Commercialization, Social Entrepreneurship.</p></div>
+        <div class="school-paragraph-card"><i class="fas fa-globe-asia"></i><h3>Social Sciences</h3><p>Psychology, International Relations, Development Studies, Public Policy, Sociology, Leadership Studies.</p></div>
+        <div class="school-paragraph-card"><i class="fas fa-leaf"></i><h3>TCM & Integrative Healthcare</h3><p>Traditional Chinese Medicine, Integrative Healthcare, Preventive Wellness, Herbal Sciences.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACILITIES GALLERY -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Our <span>Campus</span> & Facilities</h2>
+      <div class="gallery-flex">
+        <div class="gallery-item"><img src="https://sigmauniversity.ac.in/wp-content/uploads/2025/03/Medical-Laboratory-Technology-Set-to-Rule-the-World-Sigma-University.webp" alt="Sim Lab"><div class="gallery-caption">Healthcare Simulation Center</div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="AI Lab"><div class="gallery-caption">AI & Robotics Lab</div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Incubation"><div class="gallery-caption">Startup Incubation Hub</div></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Library"><div class="gallery-caption">Smart Knowledge Center</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section style="background: #f8fafc;">
+    <div class="container">
+      <h2 class="section-title">Mission & <span>Vision</span></h2>
+      <div class="mv-flex">
+        <div class="mv-card card-maroon"><i class="fas fa-bullseye"></i><h3>Our Mission</h3><p>To nurture visionary leaders, skilled professionals, researchers, healthcare practitioners, entrepreneurs, and innovators through transformative education, applied research, industry collaboration, international partnerships, and lifelong learning.</p></div>
+        <div class="mv-card card-blue"><i class="fas fa-eye"></i><h3>Our Vision</h3><p>To become Pakistan's leading Institute of Professional and Applied Sciences and a globally recognized center of excellence in Research, Innovation, Entrepreneurship, Artificial Intelligence, Healthcare Sciences, and Sustainable Development.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS SECTION -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Featured <span>Programs</span></h2>
+      <div class="programs-flex">
+        <div class="program-card card-maroon"><i class="fas fa-robot"></i><h3>BS Artificial Intelligence</h3><p>Master AI, machine learning, and data science. Hands-on labs, industry projects, and AGI foundations.</p><a href="#" class="apply-btn-sm">Apply Now</a></div>
+        <div class="program-card card-blue"><i class="fas fa-laptop-medical"></i><h3>BS Health Informatics</h3><p>Bridge healthcare and IT. Learn electronic health records, clinical decision systems, and health data analytics.</p><a href="#" class="apply-btn-sm">Apply Now</a></div>
+        <div class="program-card card-maroon"><i class="fas fa-chart-line"></i><h3>MBA Leadership</h3><p>Strategic leadership, digital business, and innovation management. Designed for future C-suite executives.</p><a href="#" class="apply-btn-sm">Apply Now</a></div>
+        <div class="program-card card-blue"><i class="fas fa-flask"></i><h3>MS Data Science</h3><p>Advanced analytics, big data, and AI-driven decision making. Research-oriented with industry capstone.</p><a href="#" class="apply-btn-sm">Apply Now</a></div>
+        <div class="program-card card-maroon"><i class="fas fa-hand-holding-usd"></i><h3>BS Entrepreneurship</h3><p>From idea to IPO – startup incubation, venture capital, and innovation ecosystem immersion.</p><a href="#" class="apply-btn-sm">Apply Now</a></div>
+        <div class="program-card card-blue"><i class="fas fa-microscope"></i><h3>PhD Health Sciences</h3><p>Doctoral research in public health, clinical research, and health policy with global faculty mentors.</p><a href="#" class="apply-btn-sm">Apply Now</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION (new design, no background) -->
+  <section class="cta-new">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Ready to Shape the Future?</h2>
+        <p>Join a community of 5,000+ alumni, 200+ faculty experts, and industry partners from 25 countries. Your journey toward global leadership starts here.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn-solid-cta"><i class="fas fa-calendar-alt"></i> Apply for Fall 2025</a>
+          <a href="#" class="btn-outline-cta"><i class="fas fa-download"></i> Download Brochure</a>
+        </div>
+        <p style="font-size: 0.85rem; margin-top: 25px; color:#64748b;">* Merit-based scholarships available for high achievers | Early deadline: June 30</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-flex">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/footer-logo.webp" alt="NIPAS Footer Logo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 200 60\'%3E%3Crect width=\'200\' height=\'60\' fill=\'%23800020\'/%3E%3Ctext x=\'20\' y=\'40\' fill=\'white\' font-size=\'24\' font-weight=\'bold\'%3ENIPAS%3C/text%3E%3C/svg%3E'">
+        </div>
+        <p>Noble Institute of Professional & Applied Sciences</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#">About NIPAS</a>
+        <a href="#">Admissions</a>
+        <a href="#">Research & Innovation</a>
+        <a href="#">News & Events</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <a href="#">Health Sciences</a>
+        <a href="#">AI & Computing</a>
+        <a href="#">Management Sciences</a>
+        <a href="#">Nursing Sciences</a>
+        <a href="#">Entrepreneurship</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Sector H-12, Islamabad</p>
+        <p><i class="fas fa-phone-alt"></i> +92-51-111-NIPAS</p>
+        <p><i class="fas fa-envelope"></i> admissions@nipas.edu.pk</p>
+        <p><i class="fas fa-clock"></i> Mon-Fri: 9am – 5pm</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 NIPAS - All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
