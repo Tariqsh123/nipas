@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact NIPAS | Noble Institute of Professional & Applied Sciences Islamabad</title>
+<!-- Font Awesome 6 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.webp" alt="NIPAS Logo">
+      </a>
+    </div>
+    <!-- DESKTOP MENU -->
+    <nav class="nav-menu" aria-label="Main Navigation">
+      <a href="about-us.html" class="nav-link">About</a>
+      <!-- PROGRAMS DROPDOWN -->
+      <div class="dropdown">
+        <button class="nav-link dropdown-btn" aria-haspopup="true" aria-expanded="false">Programs ▾</button>
+        <div class="dropdown-menu" role="menu">
+          <a href="school-of-health-science-program.html" class="dropdown-item">School of Health Sciences</a>
+          <a href="school-of-nursing-program.html" class="dropdown-item">School of Nursing</a>
+          <a href="school-of-management-sciences-program.html" class="dropdown-item">School of Management Sciences</a>
+          <a href="school-of-artificial-intelligence-and-computing-program.html" class="dropdown-item">School of Artificial Intelligence & Computing</a>
+        </div>
+      </div>
+      <a href="research.html" class="nav-link">Research</a>
+      <a href="news.html" class="nav-link">News</a>
+      <a href="contact-us.html" class="nav-link">Contact Us</a>
+      <a href="apply-now.html" class="nav-link apply-btn">Apply Now</a>
+    </nav>
+    <!-- MOBILE TOGGLE -->
+    <button class="hamburger" id="hamburger" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+<!-- MOBILE MENU -->
+<aside class="mobile-menu" id="mobileMenu">
+  <div class="mobile-header">
+    <a href="index.html" class="mobile-logo">
+      <img src="images/logo.webp" alt="NIPAS Logo">
+    </a>
+    <button class="close-btn" id="closeMenu" aria-label="Close Menu">×</button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="about-us.html">About</a>
+    <button class="mobile-dropdown-btn">Programs ▾</button>
+    <div class="mobile-dropdown">
+      <a href="school-of-health-science-program.html">School of Health Sciences</a>
+      <a href="school-of-nursing-program.html">School of Nursing</a>
+      <a href="school-of-management-sciences-program.html">School of Management Sciences</a>
+      <a href="school-of-artificial-intelligence-and-computing-program.html">School of AI & Computing</a>
+    </div>
+    <a href="research.html">Research</a>
+    <a href="news.html">News</a>
+    <a href="contact-us.html">Contact Us</a>
+    <a href="apply-now.html">Apply Now</a>
+  </nav>
+</aside>
+
+<!-- ================= MAIN: CONTACT PAGE ================= -->
+<main>
+  <!-- Hero Section -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="badge" style="background: rgba(128,0,32,0.1); display: inline-block; padding: 6px 18px; border-radius: 40px; color:#800020; margin-bottom: 20px;"><i class="fas fa-comments"></i> Get in Touch</div>
+      <h1>Contact NIPAS</h1>
+      <p style="max-width: 700px; margin: 16px auto 0; font-size: 1.1rem; color: #475569;">We're here to answer your questions about admissions, programs, research collaborations, and campus life.</p>
+    </div>
+  </section>
+
+  <!-- Contact Info Cards -->
+  <div class="container">
+    <div class="contact-info-grid">
+      <div class="info-card">
+        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Visit Us</h3>
+        <p>Sector H-12, Islamabad, Pakistan</p>
+        <p style="margin-top: 8px;">📍 Main Campus, Academic Block</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+        <h3>Call Us</h3>
+        <p>+92-51-111-NIPAS</p>
+        <p>+92-51-111-64727</p>
+        <p style="margin-top: 8px;">Mon-Fri: 9am – 5pm</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+        <h3>Email Us</h3>
+        <p><a href="mailto:admissions@nipas.edu.pk">admissions@nipas.edu.pk</a></p>
+        <p><a href="mailto:info@nipas.edu.pk">info@nipas.edu.pk</a></p>
+        <p>Support: <a href="mailto:support@nipas.edu.pk">support@nipas.edu.pk</a></p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"><i class="fas fa-clock"></i></div>
+        <h3>Office Hours</h3>
+        <p>Monday - Thursday: 8:30am – 5pm</p>
+        <p>Friday: 8:30am – 1pm</p>
+        <p>Saturday: 10am – 2pm (Admissions)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form + Map (Premium layout) -->
+  <div class="container">
+    <div class="contact-form-map">
+      <div class="form-map-flex">
+        <div class="form-col">
+          <h3><i class="fas fa-paper-plane" style="color:#800020; margin-right: 12px;"></i> Send a Message</h3>
+          <form id="contactForm" action="#" method="post">
+            <div class="input-group">
+              <input type="text" placeholder="Your Full Name *" required>
+            </div>
+            <div class="input-group">
+              <input type="email" placeholder="Email Address *" required>
+            </div>
+            <div class="input-group">
+              <input type="tel" placeholder="Phone Number">
+            </div>
+            <div class="input-group">
+              <select>
+                <option>Inquiry Type</option>
+                <option>Admissions</option>
+                <option>Program Information</option>
+                <option>Research Collaboration</option>
+                <option>Career Opportunities</option>
+                <option>General Inquiry</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <textarea placeholder="Your Message *" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn"><i class="fas fa-envelope"></i> Send Message</button>
+            <p style="font-size: 0.75rem; margin-top: 16px; color: #64748b;">* We'll respond within 24-48 hours.</p>
+          </form>
+        </div>
+        <div class="map-col">
+          <h3><i class="fas fa-map" style="color:#800020; margin-right: 12px;"></i> Campus Location</h3>
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.789482563526!2d73.01954807515612!3d33.68658873342969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd00d5ff383%3A0x1e9f6a9b9b3f4b2a!2sH-12%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1712345678901!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <p style="margin-top: 16px; font-size: 0.9rem; color: #475569;"><i class="fas fa-bus"></i> Easily accessible via Kashmir Highway & public transport. Ample parking available.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ================= FOOTER (exact copy) ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-flex">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/footer-logo.webp" alt="NIPAS Footer Logo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 200 60\'%3E%3Crect width=\'200\' height=\'60\' fill=\'%23800020\'/%3E%3Ctext x=\'20\' y=\'40\' fill=\'white\' font-size=\'24\' font-weight=\'bold\'%3ENIPAS%3C/text%3E%3C/svg%3E'">
+        </div>
+        <p>Noble Institute of Professional & Applied Sciences</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="news.html">News</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="apply-now.html">Apply Now</a>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <a href="school-of-health-science-program.html">School of Health Sciences</a>
+        <a href="school-of-artificial-intelligence-and-computing-program.html">School of AI & Computing</a>
+        <a href="school-of-management-sciences-program.html">School of Management Sciences</a>
+        <a href="school-of-nursing-program.html">School of Nursing Sciences</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Sector H-12, Islamabad</p>
+        <p><i class="fas fa-phone-alt"></i> +92-51-111-NIPAS</p>
+        <p><i class="fas fa-envelope"></i> admissions@nipas.edu.pk</p>
+        <p><i class="fas fa-clock"></i> Mon-Fri: 9am – 5pm</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 NIPAS - All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile & scroll functionality (same as original)
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const overlay = document.getElementById("overlay");
+  const closeMenu = document.getElementById("closeMenu");
+  function openMenu() {
+    mobileMenu.classList.add("active");
+    overlay.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+  function closeMobileMenu() {
+    mobileMenu.classList.remove("active");
+    overlay.classList.remove("active");
+    document.body.style.overflow = "auto";
+  }
+  if(hamburger) hamburger.addEventListener("click", openMenu);
+  if(closeMenu) closeMenu.addEventListener("click", closeMobileMenu);
+  if(overlay) overlay.addEventListener("click", closeMobileMenu);
+  document.querySelectorAll(".mobile-nav a").forEach(link => {
+    link.addEventListener("click", closeMobileMenu);
+  });
+  const mobileDropdownBtn = document.querySelector(".mobile-dropdown-btn");
+  const mobileDropdown = document.querySelector(".mobile-dropdown");
+  if(mobileDropdownBtn) {
+    mobileDropdownBtn.addEventListener("click", () => {
+      if (mobileDropdown.style.display === "flex") mobileDropdown.style.display = "none";
+      else mobileDropdown.style.display = "flex";
+    });
+  }
+  window.addEventListener("scroll", () => {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 10) navbar.classList.add("scrolled");
+    else navbar.classList.remove("scrolled");
+  });
+
+  // Simple form alert (prevent default for demo)
+  const contactForm = document.getElementById('contactForm');
+  if(contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for reaching out! Our team will respond shortly.');
+      this.reset();
+    });
+  }
+</script>
+</body>
+</html>

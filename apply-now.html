@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply Now | NIPAS Admissions Islamabad</title>
+<!-- Font Awesome 6 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- ================= NAVBAR (exact copy) ================= -->
+
+<!-- ================= NAVBAR (exact copy) ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.webp" alt="NIPAS Logo">
+      </a>
+    </div>
+    <!-- DESKTOP MENU -->
+    <nav class="nav-menu" aria-label="Main Navigation">
+      <a href="about-us.html" class="nav-link">About</a>
+      <!-- PROGRAMS DROPDOWN -->
+      <div class="dropdown">
+        <button class="nav-link dropdown-btn" aria-haspopup="true" aria-expanded="false">Programs ▾</button>
+        <div class="dropdown-menu" role="menu">
+          <a href="school-of-health-science-program.html" class="dropdown-item">School of Health Sciences</a>
+          <a href="school-of-nursing-program.html" class="dropdown-item">School of Nursing</a>
+          <a href="school-of-management-sciences-program.html" class="dropdown-item">School of Management Sciences</a>
+          <a href="school-of-artificial-intelligence-and-computing-program.html" class="dropdown-item">School of Artificial Intelligence & Computing</a>
+        </div>
+      </div>
+      <a href="research.html" class="nav-link">Research</a>
+      <a href="news.html" class="nav-link">News</a>
+      <a href="contact-us.html" class="nav-link">Contact Us</a>
+      <a href="apply-now.html" class="nav-link apply-btn">Apply Now</a>
+    </nav>
+    <!-- MOBILE TOGGLE -->
+    <button class="hamburger" id="hamburger" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+<!-- MOBILE MENU -->
+<aside class="mobile-menu" id="mobileMenu">
+  <div class="mobile-header">
+    <a href="index.html" class="mobile-logo">
+      <img src="images/logo.webp" alt="NIPAS Logo">
+    </a>
+    <button class="close-btn" id="closeMenu" aria-label="Close Menu">×</button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="about-us.html">About</a>
+    <button class="mobile-dropdown-btn">Programs ▾</button>
+    <div class="mobile-dropdown">
+      <a href="school-of-health-science-program.html">School of Health Sciences</a>
+      <a href="school-of-nursing-program.html">School of Nursing</a>
+      <a href="school-of-management-sciences-program.html">School of Management Sciences</a>
+      <a href="school-of-artificial-intelligence-and-computing-program.html">School of AI & Computing</a>
+    </div>
+    <a href="research.html">Research</a>
+    <a href="news.html">News</a>
+    <a href="contact-us.html">Contact Us</a>
+    <a href="apply-now.html">Apply Now</a>
+  </nav>
+</aside>
+<!-- ================= MAIN: APPLY NOW FORM ================= -->
+<main>
+  <!-- Hero Section -->
+  <section class="apply-hero">
+    <div class="container">
+      <div class="apply-badge"><i class="fas fa-graduation-cap"></i> Admissions Open 2026</div>
+      <h1>Apply <span>Now</span> to NIPAS</h1>
+      <p style="max-width: 700px; margin: 16px auto 0; font-size: 1.1rem; color: #475569;">Take the first step toward a transformative education. Fill out the form below to begin your application.</p>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <div class="container">
+    <div class="form-container">
+      <div class="form-header">
+        <h2><i class="fas fa-file-alt"></i> Online Admission Application</h2>
+        <p>All fields marked with <span class="required">*</span> are required</p>
+      </div>
+      <div class="form-body">
+        <form id="admissionForm" action="#" method="post" enctype="multipart/form-data">
+          <!-- Program Selection -->
+          <div class="section-subtitle">1. Program Selection</div>
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label>Select Desired Program <span class="required">*</span></label>
+              <select name="program" required>
+                <option value="">-- Please Select --</option>
+                  <option>BS Health Sciences</option>
+                  <option>MS Health Sciences</option>
+                  <option>MPhil Health Sciences</option>
+                  <option>PhD Health Sciences</option>
+                  <option>BS Nursing</option>
+                  <option>MS Nursing</option>
+                  <option>MPhil Nursing</option>
+                  <option>PhD Nursing</option>
+                  <option>BS Artificial Intelligence</option>
+                  <option>BS Computer Science</option>
+                  <option>BS Data Science</option>
+                  <option>MS Artificial Intelligence</option>
+                  <option>MS Computing</option>
+                  <option>MPhil Computing</option>
+                  <option>PhD Computing Sciences</option>
+                  <option>BS Management Sciences</option>
+                  <option>MS Management Sciences</option>
+                  <option>MPhil Management Sciences</option>
+                  <option>PhD Management Sciences</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Personal Information -->
+          <div class="section-subtitle">2. Personal Information</div>
+          <div class="form-row">
+            <div class="form-group"><label>Full Name <span class="required">*</span></label><input type="text" name="fullname" required></div>
+            <div class="form-group"><label>Father/Guardian Name</label><input type="text" name="guardian"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Date of Birth <span class="required">*</span></label><input type="date" name="dob" required></div>
+            <div class="form-group"><label>Gender <span class="required">*</span></label>
+              <select name="gender" required>
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>CNIC / B-Form Number</label><input type="text" name="cnic" placeholder="12345-6789012-3"></div>
+            <div class="form-group"><label>Nationality</label><input type="text" name="nationality" value="Pakistani"></div>
+          </div>
+
+          <!-- Contact Details -->
+          <div class="section-subtitle">3. Contact Details</div>
+          <div class="form-row">
+            <div class="form-group"><label>Email Address <span class="required">*</span></label><input type="email" name="email" required></div>
+            <div class="form-group"><label>Phone Number <span class="required">*</span></label><input type="tel" name="phone" required placeholder="03xx-xxxxxxx"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full-width"><label>Mailing Address <span class="required">*</span></label><input type="text" name="address" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>City</label><input type="text" name="city"></div>
+            <div class="form-group"><label>Postal Code</label><input type="text" name="postal"></div>
+          </div>
+
+          <!-- Academic Background -->
+          <div class="section-subtitle">4. Academic Background</div>
+          <div class="form-row">
+            <div class="form-group"><label>Last Degree/Qualification <span class="required">*</span></label><input type="text" name="last_degree" required></div>
+            <div class="form-group"><label>Institution Name</label><input type="text" name="institution"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Total CGPA / Percentage <span class="required">*</span></label><input type="text" name="cgpa" required placeholder="3.2 / 75%"></div>
+            <div class="form-group"><label>Year of Passing</label><input type="text" name="passing_year"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>GAT / Entry Test Score (if applicable)</label><input type="text" name="gat_score" placeholder="Score / Roll No"></div>
+          </div>
+
+          <!-- Document Uploads -->
+          <div class="section-subtitle">5. Upload Required Documents</div>
+          <div class="form-row">
+            <div class="form-group"><label>Recent Passport Size Photo <span class="required">*</span></label><input type="file" name="photo" accept="image/*" class="file-input" required><div class="file-note">JPG or PNG, max 2MB</div></div>
+            <div class="form-group"><label>CNIC / B-Form Copy</label><input type="file" name="cnic_copy" accept=".pdf,.jpg,.png" class="file-input"><div class="file-note">PDF or image</div></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Academic Transcripts / Degrees <span class="required">*</span></label><input type="file" name="transcripts" accept=".pdf" class="file-input" required multiple><div class="file-note">Upload all previous degrees (PDF, max 5MB each)</div></div>
+            <div class="form-group"><label>CV / Resume</label><input type="file" name="cv" accept=".pdf,.doc" class="file-input"><div class="file-note">Optional but recommended</div></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Experience Certificate (if any)</label><input type="file" name="experience" accept=".pdf" class="file-input"></div>
+          </div>
+
+          <!-- Declaration -->
+          <hr>
+          <div class="checkbox-group">
+            <input type="checkbox" id="declaration" required>
+            <label for="declaration">I hereby declare that all information provided is true and complete to the best of my knowledge. I understand that any false information may lead to cancellation of admission.<span class="required">*</span></label>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="submit-area">
+            <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> Submit Application</button>
+            <p style="margin-top: 16px; font-size: 0.8rem; color:#64748b;">After submission, you will receive a confirmation email with further instructions.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ================= FOOTER (exact copy) ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-flex">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/footer-logo.webp" alt="NIPAS Footer Logo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 200 60\'%3E%3Crect width=\'200\' height=\'60\' fill=\'%23800020\'/%3E%3Ctext x=\'20\' y=\'40\' fill=\'white\' font-size=\'24\' font-weight=\'bold\'%3ENIPAS%3C/text%3E%3C/svg%3E'">
+        </div>
+        <p>Noble Institute of Professional & Applied Sciences</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="news.html">News</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="apply-now.html">Apply Now</a>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <a href="school-of-health-science-program.html">School of Health Sciences</a>
+        <a href="school-of-artificial-intelligence-and-computing-program.html">School of AI & Computing</a>
+        <a href="school-of-management-sciences-program.html">School of Management Sciences</a>
+        <a href="school-of-nursing-program.html">School of Nursing Sciences</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Sector H-12, Islamabad</p>
+        <p><i class="fas fa-phone-alt"></i> +92-51-111-NIPAS</p>
+        <p><i class="fas fa-envelope"></i> admissions@nipas.edu.pk</p>
+        <p><i class="fas fa-clock"></i> Mon-Fri: 9am – 5pm</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 NIPAS - All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script>
+  // Mobile menu and scroll functionality (same as original)
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const overlay = document.getElementById("overlay");
+  const closeMenu = document.getElementById("closeMenu");
+  function openMenu() {
+    mobileMenu.classList.add("active");
+    overlay.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+  function closeMobileMenu() {
+    mobileMenu.classList.remove("active");
+    overlay.classList.remove("active");
+    document.body.style.overflow = "auto";
+  }
+  if(hamburger) hamburger.addEventListener("click", openMenu);
+  if(closeMenu) closeMenu.addEventListener("click", closeMobileMenu);
+  if(overlay) overlay.addEventListener("click", closeMobileMenu);
+  document.querySelectorAll(".mobile-nav a").forEach(link => {
+    link.addEventListener("click", closeMobileMenu);
+  });
+  const mobileDropdownBtn = document.querySelector(".mobile-dropdown-btn");
+  const mobileDropdown = document.querySelector(".mobile-dropdown");
+  if(mobileDropdownBtn) {
+    mobileDropdownBtn.addEventListener("click", () => {
+      if (mobileDropdown.style.display === "flex") mobileDropdown.style.display = "none";
+      else mobileDropdown.style.display = "flex";
+    });
+  }
+  window.addEventListener("scroll", () => {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 10) navbar.classList.add("scrolled");
+    else navbar.classList.remove("scrolled");
+  });
+
+  // Form submission handler (demo alert)
+  const form = document.getElementById('admissionForm');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Simple validation for file inputs (just demo)
+    const program = form.querySelector('select[name="program"]').value;
+    if (!program) {
+      alert('Please select a program.');
+      return;
+    }
+    alert('Thank you for applying to NIPAS! Your application has been received. Our admissions team will contact you within 3-5 working days.');
+    // In a real scenario, you'd send form data via fetch or FormData
+    // For demo, we reset optionally? Not resetting to keep demo visible.
+    // form.reset(); // optional
+  });
+</script>
+</body>
+</html>
