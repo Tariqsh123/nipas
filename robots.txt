@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tariqsh123.github.io/nipas/sitemap.xml
